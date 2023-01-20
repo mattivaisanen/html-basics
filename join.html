@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images</title>
+    <link rel="stylesheet" href="styles.css">
+    <style type="text/css">
+    </style>
+</head>
+<body>
+    <header>
+        <p style="margin:0;"><a href="google.com"><marquee scrollamount="15" >Sale on all Vesa t-shirts for a limited time!</marquee></p></a>
+        <h1>Vesa Keskinen Fanclub</h1>
+    </header>
+    <nav>
+        <a href="index.html">Main</a> 
+        <a href="images.html">Images</a>
+        <a href="join.html">Join</a>
+        <a href="more.html">More</a>
+        <a href="about.html">About</a>
+    </nav>
+<h1>Joining the Vesa Keskinen Fanclub</h1>
+<p>Are you intrested in joining the Vesa Keskinen Fanclub?</p>
+<p>Please enter your information down below and we'll start your application process.
+<form>
+<p>Enter your name: <input placeholder="John Doe" type="text" required> </p>
+<p>Choose your gender: 
+    <select>
+        <option >Male</option>
+        <option >Female</option>
+        <option >Other</option>
+      </select></p>
+<p>Enter your phone number: <input size="1" value="+358" placeholder="+358" maxlength="4" type="text" required> <input size="7" onkeypress="return /[0-9]/i.test(event.key)" maxlength="10" type="text" required></p>
+<p>Enter your email: <input placeholder="john.doe@example.com" type="email" required></p>
+<p>Please tell us what gained your interest in Vesa Keskinen?</p>
+<textarea placeholder="He is so handsome..." rows="4" cols="50" required></textarea>
+<p><button type="button">Submit</button></p>
+</form>
+</p>
+</body>
+
+<script>
+    var pressedButton = document.getElementsByTagName("button")[0];
+    pressedButton.addEventListener("click", function (event) {
+       alert("You application has been submitted. \nYou will know if your application is accepted...")
+    })
+</script>
+
+</html>
