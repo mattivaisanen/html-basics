@@ -4,42 +4,72 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500;1,600&display=swap" rel="stylesheet">   
     <title>Vesa Keskinen Fanclub</title>
+    
     <link rel="stylesheet" href="styles.css">
     <style type="text/css">
         li{
-            margin-left: 360px;
+            margin-left: 0px;
         } 
-    </style>
 
+    .container {
+    display: flex; /* enable flexbox on the container */
+    justify-content:center;
+    flex-wrap: wrap; /* allow the cards to wrap to the next line */
+
+    }
+    .left-column {
+    width: 30px;
+    margin-left: 15px;
+    flex-wrap: wrap;
+    flex: 1 0 300px;
+    justify-content: center;
+
+
+    }
+    .right-column {
+    width: 100%;
+    flex: 13 0 600px;
+
+    }
+    </style>
 </head>
 <body>
-    <header>
+    <header class="hero">
         <p style="margin:0;"><a href="google.com"><marquee scrollamount="15" >Sale on all Vesa t-shirts for a limited time!</marquee></p></a>
-        <h1>Vesa Keskinen Fanclub</h1>
     </header>
 <nav>
-    <a href="index.html">Main</a> 
-    <a href="images.html">Imamges</a>
-    <a href="join.html">Join</a>
-    <a href="more.html">More</a>
-    <a href="about.html">About</a>
+    <h1>Vesa Keskinen Fanclub</h1>
+    <ul>
+        <li><a href="index.html">Main</a> </li>
+        <li><a href="images.html">Images</a></li>
+        <li><a href="more.html">More</a></li>
+        <li><a href="about.html">About</a></li>
+    </ul>
+    <a class="button" href="join.html" class="button">Join</a>
+
 </nav>
 
     <p>This is my very first public website, during this class. I have in previous years of my life created many other, but none quite like this.</p>
     <p style="margin-bottom: 20px;">Here is a picture of the man of the hour, Vesa Keskinen. <br>(<strong>CONTENT WARNING!</strong> THE FOLLOWING IMAGES MAY BE DISTURBING TO SOME VIEWERS! (just kidding):</p>
+
+    <article class="container">
+        <section class="left-column"><img class="blur" src="pictures/vesa.jpg" height="400"></section>
+        <section class="right-column">
+            <p>This is Vesa Keskinen, owner of the Tuurin kyläkauppa. He is my role model. This is a picture of him after having plastic surgery to look even handsomer.</p>
+            <p>He is a legendary finnish business entrepenaur and has branched out to many different areas of business.</p>
+            <p>For example:</p>
+                <ul>
+                    <li>Current owner of Keskisen Kyläkauppa Tuuri, his shopping center in Tuuri. One of the largest shops in europe.</li>
+                    <li>He also has started brining women from africa to finland as a sorts of mail-order-bride thing. <a href="https://www.youtube.com/watch?v=8aQ9jDuvKKY">Here</a> is a document of this, made by a finnish independant investigator.</li>
+                    <li>He has also held multiple ice fishing competitions.</li>
+                </ul>
+            </section>
+    </article>
     
-    <div style="float: left;"><img class="blur" src="pictures/vesa.jpg" height="400"></div>
+
     
-    <section style="margin-top: 30px;">
-    <p>This is Vesa Keskinen, owner of the Tuurin kyläkauppa. He is my role model. This is a picture of him after having plastic surgery to look even handsomer.</p>
-    <p>He is a legendary finnish business entrepenaur and has branched out to many different areas of business.</p>
-    <p>For example:</p>
-        <ul>
-            <li>Current owner of Keskisen Kyläkauppa Tuuri, his shopping center in Tuuri. One of the largest shops in europe.</li>
-            <li>He also has started brining women from africa to finland as a sorts of mail-order-bride thing. <a href="https://www.youtube.com/watch?v=8aQ9jDuvKKY">Here</a> is a document of this, made by a finnish independant investigator.</li>
-            <li>He has also held multiple ice fishing competitions.</li>
-        </ul>
-    </section> 
+
 </body>
 </html>

@@ -11,27 +11,30 @@
     </style>
 </head>
 <body>
-    <header>
+    <header class="hero">
         <p style="margin:0;"><a href="google.com"><marquee scrollamount="15" >Sale on all Vesa t-shirts for a limited time!</marquee></p></a>
-        <h1>Vesa Keskinen Fanclub</h1>
     </header>
-    <nav>
-        <a href="index.html">Main</a> 
-        <a href="images.html">Images</a>
-        <a href="join.html">Join</a>
-        <a href="more.html">More</a>
-        <a href="about.html">About</a>
-    </nav>
+<nav>
+    <h1>Vesa Keskinen Fanclub</h1>
+    <ul>
+        <li><a href="index.html">Main</a> </li>
+        <li><a href="images.html">Images</a></li>
+        <li><a href="more.html">More</a></li>
+        <li><a href="about.html">About</a></li>
+    </ul>
+    <a class="button" href="join.html" class="button">Join</a>
+
+</nav>
 <h1>Joining the Vesa Keskinen Fanclub</h1>
 <p>Are you intrested in joining the Vesa Keskinen Fanclub?</p>
 <p>Please enter your information down below and we'll start your application process.
 <form>
 <p>Enter your name: <input placeholder="John Doe" type="text" required> </p>
-<p>Choose your gender: 
+<p >Choose your gender: 
     <select>
-        <option >Male</option>
-        <option >Female</option>
-        <option >Other</option>
+        <option>Male</option>
+        <option>Female</option>
+        <option>Other</option>
       </select></p>
 <p>Enter your phone number: <input size="4" value="+358" placeholder="+358" maxlength="4" type="text" required> <input size="10" onkeypress="return /[0-9]/i.test(event.key)" maxlength="10" type="text" required></p>
 <p>Enter your email: <input placeholder="john.doe@example.com" type="email" required></p>
